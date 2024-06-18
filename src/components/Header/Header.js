@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import './Header.css';
 
 function Header() {
@@ -16,6 +17,11 @@ function Header() {
     setMenuOpen(!menuOpen);
   };
 
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+    setMenuOpen(false); // Close the menu after scrolling
+  };
+
   return (
     <header className="header">
       <h1>Digital Media Africa</h1>
@@ -26,11 +32,46 @@ function Header() {
           </button>
           <nav className={`nav ${menuOpen ? 'open' : ''}`}>
             <ul>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/team">About</Link></li>
-              <li><Link to="/services">Services</Link></li>
-              <li><Link to="/clients">Clients</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
+              <li><ScrollLink
+                to="home"
+                smooth={true}
+                duration={500}
+                onClick={() => setMenuOpen(false)} 
+              >
+                Home
+              </ScrollLink></li>
+              <li><ScrollLink
+                to="about"
+                smooth={true}
+                duration={500}
+                onClick={() => setMenuOpen(false)}
+              >
+                About
+              </ScrollLink></li>
+              <li><ScrollLink
+                to="services"
+                smooth={true}
+                duration={500}
+                onClick={() => setMenuOpen(false)}
+              >
+                Services
+              </ScrollLink></li>
+              <li><ScrollLink
+                to="clients"
+                smooth={true}
+                duration={500}
+                onClick={() => setMenuOpen(false)}
+              >
+                Clients
+              </ScrollLink></li>
+              <li><ScrollLink
+                to="contact"
+                smooth={true}
+                duration={500}
+                onClick={() => setMenuOpen(false)}
+              >
+                Contact
+              </ScrollLink></li>
               <li><Link to="/FAQs">FAQs</Link></li>
             </ul>
           </nav>

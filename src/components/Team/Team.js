@@ -8,7 +8,7 @@ import JohnImage from '../../images/member/John.png';
 
 function Team() {
   const teamMembers = [
-    { name: 'Justin Ongeri', img: JustinImage, title: 'Director of Digital' },
+    { name: 'Justin Ongeri', title: 'Director of Digital', img: JustinImage, },
     { name: 'Job Ondicho', title: 'Operations', img: JobImage },
     { name: 'Henry Getaro', title: 'Community Manager', img: HenryImage },
     { name: 'Johnson Kamau', title: 'Media Buyer', img: JohnImage },
