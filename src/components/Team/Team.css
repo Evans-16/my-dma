@@ -1,0 +1,105 @@
+#team {
+  padding: 20px;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+}
+
+#team h2 {
+  margin: 20px 0;
+  font-size: 30px;
+  margin-top: 60px;
+  color: #fff;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-member {
+  flex: 1 1 30%;
+  max-width: 30%;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  margin: 20px;
+}
+
+.team-member h3 {
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.team-member p {
+  margin-top: 10px;
+}
+
+.team-member img {
+  border-radius: 20%;
+  width: 250px; 
+  height: 350px; 
+}
+
+button {
+  background-color: #ff004f;
+  color: black; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  border: none; 
+  border-radius: 10px; 
+  cursor: pointer; 
+  margin-top: 35px;
+}
+
+button:hover {
+  background-color: grey;
+  color: black; 
+}
+
+@media (max-width: 1200px) {
+  .team-member {
+    flex: 1 1 45%;
+    max-width: 45%;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-member {
+    flex: 1 1 80%;
+    max-width: 80%;
+    margin: 10px 0;
+  }
+
+  .team-member img {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  #team h2 {
+    font-size: 24px;
+  }
+
+  .team-member {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  .team-member img {
+    max-width: 3000px;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+  }
+}
