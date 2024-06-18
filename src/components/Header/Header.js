@@ -26,11 +26,11 @@ function Header() {
           </button>
           <nav className={`nav ${menuOpen ? 'open' : ''}`}>
             <ul>
-              <li><a href="/home">Home</a></li>
-              <li><a href="/team">About</a></li>
-              <li><a href="/services">Services</a></li>
-              <li><a href="/clients">Clients</a></li>
-              <li><a href="/contact">Contact</a></li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/team">About</Link></li>
+              <li><Link to="/services">Services</Link></li>
+              <li><Link to="/clients">Clients</Link></li>
+              <li><Link to="/contact">Contact</Link></li>
               <li><Link to="/FAQs">FAQs</Link></li>
             </ul>
           </nav>

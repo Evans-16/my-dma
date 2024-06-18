@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 
 function Team() {
   const teamMembers = [
-    { name: 'Justin Ongeri', title: 'Director of Digital', img: '/images/member/justin1.jfif' },
-    { name: 'Job Ondicho', title: 'Operations', img: '/images/member/job.png' },
+    { name: 'Justin Ongeri', title: 'Director of Digital', img: '/images/member/Justin1.jfif' },
+    { name: 'Job Ondicho', title: 'Operations', img: '/images/member/Job.png' },
+    { name: 'Henry Getaro', title: 'Community Manager', img: '/images/member/Henry.png' },
+    { name: 'Johnson Kamau', title: 'Media Buyer', img: '/images/member/John.png' },
     { name: 'Carol Wangui', title: 'Relationship Manager', img: 'https://via.placeholder.com/100' },
-    { name: 'Henry Getaro', title: 'Community Manager', img: '/images/member/henry.png' },
-    { name: 'Johnson Kamau', title: 'Media Buyer', img: '/images/member/john.png' },
   ];
 
   const initialMembers = teamMembers.slice(0,4);

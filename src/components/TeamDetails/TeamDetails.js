@@ -11,16 +11,16 @@ function TeamDetails() {
   }, []);
 
   const teamMembers = [
-    { name: 'Justin Ongeri', title: 'Director of Digital', img: '/images/member/justin1.jfif' },
-    { name: 'Job Ondicho', title: 'Operations Manager', img: '/images/member/job.png' },
+    { name: 'Justin Ongeri', title: 'Director of Digital', img: '/images/member/Justin1.jfif' },
+    { name: 'Job Ondicho', title: 'Operations Manager', img: '/images/member/Job.png' },
     { name: 'Carol Wangui', title: 'Relationship Manager', img: 'https://via.placeholder.com/100' },
-    { name: 'Henry Getare', title: 'Community Manager', img: '/images/member/henry.png' },
-    { name: 'Marlin Baraka', title: 'Head of Client Acquisition', img: '/images/member/marlin.jpg' },
-    { name: 'Johnson Kinyanjui', title: 'Digital Media Manager', img: '/images/member/john.png' },
+    { name: 'Henry Getare', title: 'Community Manager', img: '/images/member/Henry.png' },
+    { name: 'Marlin Baraka', title: 'Head of Client Acquisition', img: '/images/member/Marlin.jpg' },
+    { name: 'Johnson Kinyanjui', title: 'Digital Media Manager', img: '/images/member/John.png' },
     { name: 'Morris Njuguna', title: 'Digital Analytics Specialist', img: 'https://via.placeholder.com/100' },
     { name: 'Victor Mwenda', title: 'Dev Operations + SEO', img: 'https://via.placeholder.com/100' },
-    { name: 'Jackie Njogu', title: 'Accounts Executive', img: '/images/member/jackie.png' },
-    { name: 'Yvonne Ndichu', title: 'Social & Community Manager', img: '/images/member/yvonne.jfif' },
+    { name: 'Jackie Njogu', title: 'Accounts Executive', img: '/images/member/Jackie.png' },
+    { name: 'Yvonne Ndichu', title: 'Social & Community Manager', img: '/images/member/Yvonne.jfif' },
     { name: 'James Mbugua', title: 'Creative Director', img: 'https://via.placeholder.com/100' },
     { name: 'Eva Wangari', title: 'Media Buyer', img: 'https://via.placeholder.com/100' },
   ];
