@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Team() {
   const teamMembers = [
-    { name: 'Justin Ongeri', title: 'Director of Digital', img: '/images/member/Justin1.jfif' },
+    { name: 'Justin Ongeri', title: 'Director of Digital', img: '/images/justin.png' },
     { name: 'Job Ondicho', title: 'Operations', img: '/images/member/Job.png' },
     { name: 'Henry Getaro', title: 'Community Manager', img: '/images/member/Henry.png' },
     { name: 'Johnson Kamau', title: 'Media Buyer', img: '/images/member/John.png' },
