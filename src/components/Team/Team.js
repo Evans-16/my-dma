@@ -1,17 +1,21 @@
 import React from 'react';
 import './Team.css';
 import { Link } from 'react-router-dom';
+import JustinImage from '../../images/member/Justin1.jfif';
+import JobImage from '../../images/member/Job.png';
+import HenryImage from '../../images/member/Henry.png';
+import JohnImage from '../../images/member/John.png';
 
 function Team() {
   const teamMembers = [
-    { name: 'Justin Ongeri', title: 'Director of Digital', img: '/images/justin.png' },
-    { name: 'Job Ondicho', title: 'Operations', img: '/images/member/Job.png' },
-    { name: 'Henry Getaro', title: 'Community Manager', img: '/images/member/Henry.png' },
-    { name: 'Johnson Kamau', title: 'Media Buyer', img: '/images/member/John.png' },
+    { name: 'Justin Ongeri', img: JustinImage, title: 'Director of Digital' },
+    { name: 'Job Ondicho', title: 'Operations', img: JobImage },
+    { name: 'Henry Getaro', title: 'Community Manager', img: HenryImage },
+    { name: 'Johnson Kamau', title: 'Media Buyer', img: JohnImage },
     { name: 'Carol Wangui', title: 'Relationship Manager', img: 'https://via.placeholder.com/100' },
   ];
 
-  const initialMembers = teamMembers.slice(0,4);
+  const initialMembers = teamMembers.slice(0, 4);
 
   return (
     <section id="team">
