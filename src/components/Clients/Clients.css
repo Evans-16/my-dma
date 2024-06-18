@@ -129,7 +129,7 @@
   
   @media (max-width: 480px) {
     .carousel-track {
-      width: calc(150px * 8); /* adjust the width for even fewer clients */
+      width: calc(150px * 4); /* adjust the width for even fewer clients */
     }
   
     .client {

@@ -41,7 +41,7 @@ function Header() {
                 Home
               </ScrollLink></li>
               <li><ScrollLink
-                to="about"
+                to="team"
                 smooth={true}
                 duration={500}
                 onClick={() => setMenuOpen(false)}

@@ -77,29 +77,31 @@
   }
   @media (max-width: 768px) {
     #home {
-      padding: 30px 10px; /* Reduced padding for smaller screens */
+      padding: 30px 10px; 
     }
   
     .animated-text {
-      font-size: 1.4em; /* Adjusted font size for smaller screens */
+      font-size: 1.4em; 
     }
   
     .line {
-      font-size: 1.2em; /* Adjusted font size for smaller screens */
+      font-size: 1.2em; 
     }
   }
   
   @media (max-width: 480px) {
     #home {
-      padding: 20px 5px; /* Further reduced padding for smaller screens */
-      height: 500px; /* Adjusted height for smaller screens */
+      padding: 20px 5px; 
+      height: 500px; 
+      background-image: url('/public/images/Asset 1.png');
+      background-size: cover;
     }
   
     .animated-text {
-      font-size: 0.9em; /* Adjusted font size for smaller screens */
+      font-size: 0.9em; 
     }
   
     .line {
-      font-size: 1em; /* Adjusted font size for smaller screens */
+      font-size: 1em; 
     }
   }
