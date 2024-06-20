@@ -2,6 +2,7 @@ import React from 'react';
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
+import Statistics from './components/Statistics/Statistics';
 import Team from './components/Team/Team';
 import TeamDetails from './components/TeamDetails/TeamDetails';
 import Services from './components/Services/Services';
@@ -22,6 +23,7 @@ function App() {
             <Route path="/" element={
               <>
                 <Home />
+                <Statistics />
                 <Team />
                 <Services />
                 <Clients />

@@ -65,6 +65,30 @@ function TeamDetails() {
         </div>
       </Slider>
 
+    <section className="why-choose-us">
+      <h2>Why Choose Us</h2>
+      <div className="paragraphs-container">
+        <div className="paragraph">
+          <p><strong>Innovative Solutions:</strong> We leverage the latest technologies and industry best practices to craft innovative solutions that drive business growth. Whether you're looking to enhance your digital presence, optimize your marketing efforts, or develop custom applications, we have the expertise to deliver results that exceed your expectations.</p>
+        </div>
+        <div className="paragraph">
+          <p><strong>Data-Driven Approach:</strong> Our solutions are driven by data insights, ensuring that every decision is backed by thorough analysis and measurable results. From strategic planning to execution and performance tracking, we use data to continuously refine and optimize your digital strategy.</p>
+        </div>
+        <div className="paragraph">
+          <p><strong>Customer-Centric Focus:</strong> We prioritize your success and are committed to building long-term partnerships. Our proactive and collaborative approach ensures that we understand your business goals and deliver solutions that align with your vision.</p>
+        </div>
+        <div className="paragraph">
+          <p><strong>Exceptional Team:</strong> Our team comprises skilled professionals with diverse backgrounds in digital marketing, web development, design, and strategy. Together, we bring a wealth of experience and creativity to every project, ensuring that you receive top-notch service and outstanding results.</p>
+        </div>
+        <div className="paragraph">
+          <p><strong>Proven Track Record:</strong> With a proven track record of delivering successful projects across various industries, we have earned the trust of numerous clients. Our portfolio showcases our ability to achieve tangible results and drive business growth for our partners.</p>
+        </div>
+        <div className="paragraph">
+          <p><strong>Continuous Improvement:</strong> We are dedicated to continuous improvement and staying ahead of industry trends. By investing in ongoing training and adopting new technologies, we ensure that our solutions are always at the forefront of digital innovation.</p>
+        </div>
+      </div>
+     </section>
+
       <h2 className="team-details-heading">Our Full Team</h2>
       <div className="team-details-container">
         {teamMembers.map((member, index) => (

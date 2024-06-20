@@ -2,6 +2,11 @@ import React from 'react';
 import './Home.css';
 
 const Home = () => {
+
+  const handleClick = () => {
+    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+  };
+  
   return (
     <section id="home">
         <h2 className="animated-text">
@@ -10,6 +15,9 @@ const Home = () => {
           <span className="line">through data driven strategies</span>
           <span className="line">Join Us</span>
         </h2>
+        <button className="work-with-us-button" onClick={handleClick}>
+        Work with Us
+        </button>
     </section>
   );
 }
