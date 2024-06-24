@@ -4,129 +4,146 @@
   padding: 50px 0px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-image: url('/public/images/Asset 1.jpg');
-  background-size: cover;
+  height: auto;
+  min-height: 80vh;
+  background: linear-gradient(45deg, #000000, #1a1a1a, #333333, #4d4d4d);
+  background-color: #333;
+  backdrop-filter: blur(5px);
+  background-size: 400% 400%;
   background-position: center;
+  animation: gradientAnimation 15s ease infinite;
   overflow: hidden;
 }
 
-#home::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: inherit;
-  background-size: inherit;
-  background-position: inherit;
-  filter: blur(10px); 
-  z-index: -1;
-  animation: zoom 6s infinite alternate ease-in-out;
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-@keyframes zoom {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.3);
+#home .animated-text {
+  font-size: 2.8em;
+  color: #fff;
+  margin: 0;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 3rem;
+  text-align: center;
+}
+
+#home .animated-text2 {
+  font-size: 1.5em;
+  font-weight: 100;
+  color: #fff;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.line {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: rollOut 3s ease-out forwards;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.line:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.line:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.line:nth-child(3) {
+  animation-delay: 2s;
+}
+
+@keyframes rollOut {
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
-  
+
+.work-with-us-button {
+  margin-bottom: 40px;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border: 2px solid black;
+  color: #fff;
+  background-color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.work-with-us-button:hover {
+  background-color: #fff;
+  color: black;
+}
+
+@media (max-width: 1024px) {
+  .animated-text {
+    font-size: 2.2em;
+  }
+}
+
+@media (max-width: 920px) {
+  #home {
+    padding: 30px 10px;
+    min-height: 60vh;
+  }
+
   .animated-text {
     font-size: 1.8em;
-    color: #ff004f;
-    margin: 0;
-    white-space: nowrap;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
   }
-  
+
   .line {
-    grid-column: 1;
-    display: grid;
-    opacity: 0;
-    transform: translateX(-100%);
-    white-space: nowrap;
-    animation: rollOut 3s ease-out forwards;
-  }
-  
-  .line:nth-child(1) {
-    animation-delay: 0s;
-  }
-  
-  .line:nth-child(2) {
-    animation-delay: 1s;
-  }
-
-  .line:nth-child(3) {
-    animation-delay: 2s;
-  }
-
-  .line:nth-child(4) {
-    animation-delay: 3s;
-  }
-  
-  @keyframes rollOut {
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
+    font-size: 1.4em;
+    display: block;
+    white-space: normal;
   }
 
   .work-with-us-button {
-    /*margin-top: 20px;*/
-    margin-bottom: 40px;
-    padding: 10px 20px;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  #home {
+    padding: 5px 2px;
+    min-height: 80vh;
+  }
+
+  .animated-text {
     font-size: 1.2em;
-    color: black;
-    background-color: #ff004f;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .work-with-us-button:hover {
-    background-color: grey;
-    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 0.5rem;
+    text-align: center;
   }
 
-  /*------------------------------------------------------------------------------------------*/
-  @media (max-width: 768px) {
-    #home {
-      padding: 30px 10px; 
-    }
-  
-    .animated-text {
-      font-size: 1.4em; 
-    }
-  
-    .line {
-      font-size: 1.2em; 
-    }
+  .line {
+    font-size: 1em;
+    display: block;
+    margin-bottom: 5px;
+    white-space: normal;
   }
-  
-  @media (max-width: 480px) {
-    #home {
-      padding: 20px 5px; 
-      height: 500px; 
-      background-image: url('/public/images/Asset 1.jpg');
-      background-size: 450px 100%;
-    }
-  
-    .animated-text {
-      font-size: 0.9em; 
-    }
-  
-    .line {
-      font-size: 1em; 
-    }
 
-    .work-with-us-button {
-      width: 100%;
-    }
+  .work-with-us-button {
+    font-size: 0.8em;
+    width: 80%;
   }
+}

@@ -101,15 +101,16 @@
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
-    background-color: #ff004f;
+    background-color: black;
+    border: 2px solid black;
     color: #fff;
-    border: none;
     border-radius: 6px;
     transition: background-color 0.3s;
   }
   
   .form-container form button:hover {
-    background-color: grey;
+    background-color: #fff;
+    color: black;
   }
   
   #msg {

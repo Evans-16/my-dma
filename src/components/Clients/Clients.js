@@ -31,7 +31,7 @@ const clientLogos = [
 ];
 
 const testimonials = [
-  { text: "This company has transformed our business. Their services are unmatched!", author: "John Doe, CEO of Company...." },
+  { text: "Digital Media Africa aims at delivering quality and refutable digital solutions for businesses looking to market their products", author: "Justin Ongeri, CEO" },
   { text: "Exceptional quality and attention to detail. Highly recommend!", author: "Jane Smith, Marketing Director at ABC Corp" },
   { text: "We've seen significant growth since partnering with them. Truly outstanding!", author: "Alice Johnson, COO of...." },
   //{ text: "We've seen significant growth since partnering with them. Truly outstanding!", author: "Ben Afleck, COO of Coca Cola" }

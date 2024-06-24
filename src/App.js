@@ -24,8 +24,8 @@ function App() {
               <>
                 <Home />
                 <Statistics />
-                <Team />
                 <Services />
+                <Team />
                 <Clients />
                 <Contact />
               </>

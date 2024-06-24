@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import './TeamDetails.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import JustinImage from '../../images/member/1.jfif';
+import JustinImage from '../../images/member/Justin1.jfif';
 import JobImage from '../../images/member/Job.png';
 import HenryImage from '../../images/member/Henry.png';
 import MarlinImage from '../../images/member/Marlin.jpg';

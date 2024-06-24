@@ -101,13 +101,13 @@
 }
 
 .team-member h3 {
-  font-style: italic;
+  font-style: normal;
 }
 
 .team-member img {
   width: 250px;
   height: 250px;
-  border-radius: 15%;
+  border-radius: 5%;
 }
 
 .slick-slider {

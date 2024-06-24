@@ -13,7 +13,6 @@
 
 .header h1 {
   margin: 0;
-  animation: colorChange 10s infinite, zoominout 25s infinite;
 }
 
 .header .menu-toggle {
@@ -23,7 +22,7 @@
   border: none;
   color: #fff;
   cursor: pointer;
-  position: absolute;
+  /*position: absolute;*/
   top: 10px;
   right: 0px;
 }
@@ -47,6 +46,7 @@
   display: block;
   margin: 10px 0;
   text-align: center;
+  font-weight: bold;
 }
 
 .nav ul li a {
@@ -98,8 +98,35 @@
   }
 }
 
+@media (max-width: 912px) {
+  .header .menu-toggle {
+    position: absolute;
+    display: block;
+    right: 20px;
+    top: -20px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .header .menu-toggle {
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .header h1 {
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 767px) {
   .header .menu-toggle {
+    position: absolute;
     display: block;
     right: 0px;
     top: -20px;
@@ -115,23 +142,5 @@
 
   .header h1 {
     font-size: 18px;
-  }
-}
-
-@keyframes colorChange {
-  0%, 100% {
-    color: #fff;
-  }
-  50% {
-    color: #ff004f;
-  }
-}
-
-@keyframes zoominout {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0.9);
   }
 }
