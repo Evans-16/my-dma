@@ -27,7 +27,7 @@ function Header() {
           <button className="menu-toggle" onClick={toggleMenu}>
             ☰
           </button>
-          <nav className={`nav ${menuOpen ? 'open' : ''}`}>
+          <nav className={`nav  ${menuOpen ? 'open' : ''}`}>
             <ul>
               <li>
                 <ScrollLink
