@@ -9,9 +9,7 @@ const Home = () => {
   return (
     <section id="home">
       <h2 className="animated-text">
-        <span className="line">Hi👋 welcome to Digital Media Africa. We are</span>
-        <span className="line">an optimal performance striving agency</span>
-        <span className="line">driven through data strategies.</span>
+        <span className="line">Hi👋 welcome to Digital Media Africa.</span>
       </h2>
 
       <h3 className="animated-text2">

@@ -12,6 +12,8 @@ import Footer from './components/Footer/Footer';
 import './App.css';
 import ServiceDetails from './components/ServicesDetails/ServiceDetails';
 import FAQs from './components/FAQs/FAQs';
+import Blog from './components/Blog/Blog';
+import BlogPost from './components/Blog/BlogPost';
 
 function App() {
   return (
@@ -32,7 +34,9 @@ function App() {
             } />
             <Route path="/team-details" element={<TeamDetails />} />
             <Route path="/services-details" element={<ServiceDetails />} />
+            <Route path='/Blog' element={<Blog />} />
             <Route path="/faqs" element={<FAQs />} />
+            <Route path="/blog/:id" element={<BlogPost />} />
           </Routes>
         </main>
         <Footer />

@@ -57,8 +57,8 @@ function Contact() {
         <div className="social-icons">
           <a href="#linkedin"><i className="fa fa-linkedin"></i></a>
           <a href="#instagram"><i className="fa fa-instagram"></i></a>
-          <a href="#facebook"><i className="fa fa-facebook"></i></a>
-          <a href="#x"><i className="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61558462792224&sk=about"><i className="fa fa-facebook"></i></a>
+          <a href="https://x.com/DigitalMediaAfr"><i className="fa-brands fa-x-twitter"></i></a>
           <a href="#youtube"><i className="fa fa-youtube"></i></a>
         </div>
       </div>

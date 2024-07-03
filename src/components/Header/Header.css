@@ -15,20 +15,20 @@
   margin: 0;
 }
 
-.header .menu-toggle {
+.header .menu-toggle-container {
   display: none;
+}
+
+.header .menu-toggle {
   font-size: 24px;
   background: none;
   border: none;
   color: #fff;
   cursor: pointer;
-  /*position: absolute;*/
-  top: 10px;
-  right: 0px;
 }
 
 .nav {
-  display: flex;
+  display: none;
   flex-direction: column;
   width: 100%;
 }
@@ -76,13 +76,14 @@
   display: flex;
 }
 
-/* Media queries for tablets and larger screens */
-@media (min-width: 768px) {
-  .header .menu-toggle {
+/* Media queries for screens 1024px and above */
+@media (min-width: 1024px) {
+  .header .menu-toggle-container {
     display: none;
   }
 
   .nav {
+    display: flex;
     flex-direction: row;
     width: auto;
   }
@@ -93,43 +94,22 @@
 
   .nav ul li {
     display: inline-block;
-    margin-left: 20px;
     margin: 0 10px;
   }
 }
 
-@media (max-width: 912px) {
-  .header .menu-toggle {
-    position: absolute;
-    display: block;
-    right: 20px;
-    top: -20px;
-  }
-
-  .nav {
-    display: none;
-  }
-
-  .nav.open {
+/* Media queries for screens below 1024px */
+@media (max-width: 1023px) {
+  .header .menu-toggle-container {
     display: flex;
-  }
-
-  .header .menu-toggle {
     justify-content: flex-end;
-    align-items: center;
+    width: auto;
   }
 
-  .header h1 {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 767px) {
   .header .menu-toggle {
-    position: absolute;
-    display: block;
-    right: 0px;
-    top: -20px;
+    position: relative;
+    right: 0;
+    top: 0;
   }
 
   .nav {
