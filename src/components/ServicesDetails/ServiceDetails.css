@@ -42,11 +42,9 @@
 }
 
 .service-detail-image img {
-    width: 80vh;
     max-width: 200px;
-    height: auto;
+    height: 200px;
     border-radius: 8px;
-    height: 50vh;
 }
 
 .service-detail-content {
