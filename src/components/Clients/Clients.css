@@ -51,7 +51,7 @@
   
   .testimonials-container {
     position: relative;
-    height: 300px;
+    height: 150px;
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
@@ -66,27 +66,24 @@
     padding: 15px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
-    display: block;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     opacity: 0;
-    transition: all 3s ease-in-out;
-    transform: scale(2.8);
-    height: 200px;
+    transition: opacity 1s ease-in-out;
   }
   
   .testimonial.active {
-    display: block;
     opacity: 1;
-    transform: scale(1);
-    font-size: 20px;
+    z-index: 1;
   }
   
   .testimonial.previous,
   .testimonial.next {
-    display: block;
-    opacity: 0.5;
-    transform: scale(0.9);
-  }
+    opacity: 0;
+    z-index: 0;
+  }  
   
   .testimonial p {
     font-style: italic;

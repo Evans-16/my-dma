@@ -43,8 +43,7 @@ function Clients() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentTestimonial(prev => (prev + 1) % testimonials.length);
-    }, 5000); // Change testimonial every 3 seconds
-
+    }, 5000); 
     return () => clearInterval(interval);
   }, []);
 

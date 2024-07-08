@@ -3,13 +3,6 @@ import Slider from 'react-slick';
 import './TeamDetails.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import JustinImage from '../../images/member/Justin1.jfif';
-import JobImage from '../../images/member/Job.png';
-import HenryImage from '../../images/member/Henry.png';
-import MarlinImage from '../../images/member/Marlin.jpg';
-import JohnImage from '../../images/member/John.png';
-import JackieImage from '../../images/member/Jackie.png';
-import YvonneImage from '../../images/member/Yvonne.jfif';
 
 function TeamDetails() {
 
@@ -18,18 +11,18 @@ function TeamDetails() {
   }, []);
 
   const teamMembers = [
-    { name: 'Justin Ongeri', title: 'Director of Digital', img: JustinImage },
-    { name: 'Job Ondicho', title: 'Operations Manager', img: JobImage },
+    { name: 'Justin Ongeri', title: 'Director of Digital', img: '/images/member/Justin1.jfif' },
+    { name: 'Job Ondicho', title: 'Operations Manager', img: '/images/member/Job.png' },
     { name: 'Carol Wangui', title: 'Relationship Manager', img: 'https://via.placeholder.com/100' },
-    { name: 'Henry Getare', title: 'Community Manager', img: HenryImage },
-    { name: 'Marlin Baraka', title: 'Head of Client Acquisition', img: MarlinImage },
-    { name: 'Johnson Kinyanjui', title: 'Digital Media Manager', img: JohnImage },
+    { name: 'Henry Getare', title: 'Community Manager', img: '/images/member/Henry.png' },
+    { name: 'Marlin Baraka', title: 'Head of Client Acquisition', img: '/images/member/Marlin.jpg' },
+    { name: 'Johnson Kinyanjui', title: 'Digital Media Manager', img: '/images/member/John.png' },
     { name: 'Morris Njuguna', title: 'Digital Analytics Specialist', img: 'https://via.placeholder.com/100' },
     { name: 'Victor Mwenda', title: 'Dev Operations + SEO', img: 'https://via.placeholder.com/100' },
-    { name: 'Jackie Njogu', title: 'Accounts Executive', img: JackieImage },
-    { name: 'Yvonne Ndichu', title: 'Social & Community Manager', img: YvonneImage },
+    { name: 'Jackie Njogu', title: 'Accounts Executive', img: '/images/member/Jackie.png' },
+    { name: 'Yvonne Ndichu', title: 'Social & Community Manager', img: '/images/member/4a.jfif' },
     { name: 'James Mbugua', title: 'Creative Director', img: 'https://via.placeholder.com/100' },
-    { name: 'Eva Wangari', title: 'Media Buyer', img: 'https://via.placeholder.com/100' },
+    { name: 'Jeff Legishion', title: 'Media Buyer', img: '/images/member/Jeff.jpeg' },
   ];
 
   const carouselSettings = {

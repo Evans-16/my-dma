@@ -11,7 +11,7 @@ function Header() {
                              location.pathname.includes('/FAQs') ||
                              location.pathname.includes('/services-details') ||
                              location.pathname.includes('/Blog') ||
-                             location.pathname.includes('/BlogPost');
+                             location.pathname.includes('/blog/');
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 

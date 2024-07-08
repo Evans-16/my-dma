@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom'; 
 import './ServiceDetails.css';
 
 function ServiceDetails() {
@@ -29,6 +30,9 @@ function ServiceDetails() {
                         <div className="service-detail-content">
                             <h3>{service.title}</h3>
                             <p>{service.details}</p>
+                            <Link to="/Contact">
+                                <button className='contact-us-button'>Contact Us</button>
+                            </Link>
                         </div>
                     </div>
                 ))}
