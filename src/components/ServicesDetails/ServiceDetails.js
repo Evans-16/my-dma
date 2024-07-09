@@ -9,13 +9,13 @@ function ServiceDetails() {
     }, []);
 
     const services = [
-       { title: 'Digital Media Buying', img: 'images/service/media.jfif', details: 'Innovative and experienced in developing and deploying digital strategies for brands across Africa, larger EMEA and the Islands.' },
-       { title: 'Digital Media Strategy Development', img: 'images/service/strategy.jfif', details: 'Focused on measurable impact, driving interaction, and building ROAS (ROI)-focused projects.' },
+       { title: 'Digital Media Buying', img: 'images/service/BUSINESS LEADS -  DIGITAL MEDIA AFRICA.jpg', details: 'Innovative and experienced in developing and deploying digital strategies for brands across Africa, larger EMEA and the Islands.' },
+       { title: 'Digital Media Strategy Development', img: 'images/service/Strategy.jpg', details: 'Focused on measurable impact, driving interaction, and building ROAS (ROI)-focused projects.' },
        { title: 'Web Development', img: 'images/service/web.jfif', details: 'Our web development services include designing, building, and maintaining websites that are fast, secure, and mobile-friendly.' },
        { title: 'SEO/SEM', img: 'images/service/SEO2.jfif', details: 'We improve your website’s visibility on search engines through effective SEO and SEM strategies.' },
        { title: 'Content Creation', img: 'images/service/content.jfif', details: 'Our content creation team produces high-quality, engaging content that aligns with your brand’s voice and goals.' },
-       { title: 'Social Media Management', img: 'images/service/contentmanage.jfif', details: 'We provide comprehensive analytics services to help you track, analyze, and optimize your marketing performance.' },
-       { title: 'Digital Marketing Training', img: 'images/service/training.jfif', details: 'We provide training on digital marketing.' },
+       { title: 'Social Media Management', img: 'images/service/DIGITAL MEDIA AFRICA.png', details: 'We provide comprehensive analytics services to help you track, analyze, and optimize your marketing performance.' },
+       { title: 'Digital Marketing Training', img: 'images/service/BUSINESS TRAINING - DIGITAL MEDIA AFRICA.jpg', details: 'We provide training on digital marketing.' },
     ];
 
     return (

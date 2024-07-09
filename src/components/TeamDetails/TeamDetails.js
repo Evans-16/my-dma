@@ -20,7 +20,7 @@ function TeamDetails() {
     { name: 'Morris Njuguna', title: 'Digital Analytics Specialist', img: 'https://via.placeholder.com/100' },
     { name: 'Victor Mwenda', title: 'Dev Operations + SEO', img: 'https://via.placeholder.com/100' },
     { name: 'Jackie Njogu', title: 'Accounts Executive', img: '/images/member/4a.jfif' },
-    { name: 'Yvonne Ndichu', title: 'Social & Community Manager', img: '/images/member/Yvonne.jfif' },
+    { name: 'Yvonne Ndichu', title: 'Social & Community Manager', img: '/images/member/Yvonne.jpg' },
     { name: 'James Mbugua', title: 'Creative Director', img: 'https://via.placeholder.com/100' },
     { name: 'Jeff Legishion', title: 'Media Buyer', img: '/images/member/Jeff.jpeg' },
   ];

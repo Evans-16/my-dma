@@ -12,7 +12,6 @@ function Team() {
     { name: 'Job Ondicho', title: 'Operations', img: JobImage },
     { name: 'Henry Getaro', title: 'Community Manager', img: HenryImage },
     { name: 'Johnson Kamau', title: 'Media Buyer', img: JohnImage },
-    { name: 'Carol Wangui', title: 'Relationship Manager', img: 'https://via.placeholder.com/100' },
   ];
 
   const initialMembers = teamMembers.slice(0, 4);

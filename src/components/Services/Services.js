@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Services() {
   const services = [
-    { title: 'Media Buying', img: 'images/service/media.jfif', details: ['Media Planning', 'Optimization'] },
+    { title: 'Media Buying', img: 'images/service/BUSINESS LEADS -  DIGITAL MEDIA AFRICA.jpg', details: ['Media Planning', 'Optimization'] },
     { title: 'Digital Marketing', img: 'images/service/marketing.jfif', details: ['Social media marketing', 'Marketing Campaigns'] },
     { title: 'Web Development', img: 'images/service/web.jfif', details: ['Web Design', 'SEO'] },
     { title: 'Content Creation', img: 'images/service/content.jfif', details: ['Tiktok content', 'Youtube content'] },
@@ -12,7 +12,7 @@ function Services() {
 
   return (
     <section id="services">
-      <h2>What We Do?</h2>
+      <h2>What We Do</h2>
       <div className="services-container">
         {services.map((service, index) => (
           <div key={index} className="service">

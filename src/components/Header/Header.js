@@ -27,7 +27,9 @@ function Header() {
 
   return (
     <header className="header">
-      <h1>Digital Media Africa</h1>
+      <Link to="/">
+        <img src="/Asset 1.png" alt="Home" />
+      </Link>
       {!isDetailPage() && (
         <>
           <div className="menu-toggle-container">

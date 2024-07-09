@@ -43,7 +43,7 @@
   text-align: center;
 }
 
-.line {
+/*.line {
   opacity: 0;
   transform: translateX(-100%);
   animation: rollOut 3s ease-out forwards;
@@ -64,7 +64,7 @@
     opacity: 1;
     transform: translateX(0);
   }
-}
+}*/
 
 .work-with-us-button {
   margin-bottom: 40px;
