@@ -28,7 +28,7 @@ function Header() {
   return (
     <header className="header">
       <Link to="/">
-        <img src="/Asset 1.png" alt="Home" />
+        <img src={`${process.env.PUBLIC_URL}/Asset 1.png`} alt="Home" />
       </Link>
       {!isDetailPage() && (
         <>
