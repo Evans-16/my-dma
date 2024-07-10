@@ -34,7 +34,7 @@ function Header() {
         <>
           <div className="menu-toggle-container">
             <button className="menu-toggle" onClick={toggleMenu}>
-              ☰
+              {menuOpen ? '✕' : '☰'}
             </button>
           </div>
           <nav className={`nav ${menuOpen ? 'open' : ''}`}>
