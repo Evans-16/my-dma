@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
@@ -14,11 +14,28 @@ import ServiceDetails from './components/ServicesDetails/ServiceDetails';
 import FAQs from './components/FAQs/FAQs';
 import Blog from './components/Blog/Blog';
 import BlogPost from './components/Blog/BlogPost';
+import NewsletterPopup from './components/NewsletterPopup/NewsletterPopup';
 
 function App() {
+
+    const [showPopup, setShowPopup] = useState(false);
+  
+    useEffect(() => {
+      const popupShown = localStorage.getItem('popupShown');
+      if (!popupShown) {
+        setShowPopup(true);
+        localStorage.setItem('popupShown', 'true');
+      }
+    }, []);
+  
+    const closePopup = () => {
+      setShowPopup(false);
+    };
+
   return (
     <Router>
       <div className="App">
+      {showPopup && <NewsletterPopup onClose={closePopup} />}
         <Header />
         <main>
           <Routes>

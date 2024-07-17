@@ -33,7 +33,7 @@ const clientLogos = [
 const testimonials = [
   { text: "Digital Media Africa aims at delivering quality and refutable digital solutions for businesses looking to market their products", author: "Justin Ongeri, CEO" },
   { text: "Exceptional quality and attention to detail.", author: "Johnson Kamau, Digital Media Manager" },
-  { text: "We've seen significant growth since partnering with our clients", author: "Henry Getaro, Community Manager" },
+  { text: "We've seen significant growth since partnering with our clients", author: "Henry Getare, Community Manager" },
 ];
 
 function Clients() {

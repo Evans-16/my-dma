@@ -1,27 +1,20 @@
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 import './Header.css';
 
 function Header() {
-  const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
-
-  const isDetailPage = () => location.pathname.includes('/team-details') ||
-                             location.pathname.includes('/FAQs') ||
-                             location.pathname.includes('/services-details') ||
-                             location.pathname.includes('/Blog') ||
-                             location.pathname.includes('/blog/');
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   const navigationLinks = [
-    { name: 'Home', to: 'home', component: ScrollLink },
-    { name: 'Services', to: 'services', component: ScrollLink },
-    { name: 'About', to: 'team', component: ScrollLink },
+    { name: 'Home', to: '/', component: Link },
+    { name: 'Services', to: '/services-details', component: Link },
+    { name: 'About', to: '/team-details', component: Link },
     { name: 'Blog', to: '/Blog', component: Link },
-    { name: 'Clients', to: 'clients', component: ScrollLink },
-    { name: 'Contact', to: 'contact', component: ScrollLink },
+    //{ name: 'Clients', to: 'clients', component: ScrollLink },
+    { name: 'Contact', to: '/contact', component: Link },
     { name: 'FAQs', to: '/FAQs', component: Link },
   ];
 
@@ -30,7 +23,7 @@ function Header() {
       <Link to="/">
         <img src={`${process.env.PUBLIC_URL}/Asset 1.png`} alt="Home" />
       </Link>
-      {!isDetailPage() && (
+      {(
         <>
           <div className="menu-toggle-container">
             <button className="menu-toggle" onClick={toggleMenu}>
